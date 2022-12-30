@@ -29,7 +29,7 @@
     "dotenv": "^6.0.0",
     "eslint": "^5.16.0",
     "eslint-config-lennym": "^2.0.1",
-    "mocha": "^7.1.2",
+    "mocha": "^10.2.0",
     "nodemon": "^2.0.4",
     "sinon": "^9.0.2"
   }
