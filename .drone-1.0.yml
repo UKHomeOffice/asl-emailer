@@ -66,8 +66,11 @@ steps:
       - docker tag asl-emailer quay.io/ukhomeofficedigital/asl-emailer:$${DRONE_COMMIT_SHA}
       - docker push quay.io/ukhomeofficedigital/asl-emailer:$${DRONE_COMMIT_SHA}
     when:
-      event: push
-      branch: master
+      event:
+        - push
+      branch: 
+        - master
+        - test-submodule-image
   - name: update manifest
     image: quay.io/ukhomeofficedigital/asl-deploy-bot:latest
     environment:
